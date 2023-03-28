@@ -1,4 +1,5 @@
 import { GET_PRODUCTS } from './mutation-types';
+import axios from 'axios';
 
 const captains = console;
 
@@ -38,8 +39,10 @@ export default {
   actions: {
     async getProductsAction({ commit }) {
       try {
-        commit(GET_PRODUCTS, data.products);
-        return data.products;
+        axios.get('./data-api/rest/Products')
+             .then(function (response) {
+               return response;
+             })
       } catch (error) {
         captains.error(error);
       }

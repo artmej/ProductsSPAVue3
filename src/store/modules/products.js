@@ -1,5 +1,5 @@
 import { GET_PRODUCTS } from './mutation-types';
-import axios from 'axios';
+//import axios from 'axios';
 
 const captains = console;
 
@@ -17,14 +17,11 @@ export default {
   },
   actions: {
     async getProductsAction() {
-      try {
-        axios.get('./data-api/rest/Products')
-             .then(function (response) {
-               return response;
-             })
-      } catch (error) {
-        captains.error(error);
-      }
+      //try {
+          return({"value":"value"});
+      //} //catch (error) {
+        //captains.error(error);
+      //}
     },
   },
   getters: {

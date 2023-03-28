@@ -1,7 +1,7 @@
 import { GET_PRODUCTS } from './mutation-types';
 //import axios from 'axios';
 
-const captains = console;
+//const captains = console;
 
 
 export default {

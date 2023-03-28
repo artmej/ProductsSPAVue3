@@ -30,7 +30,7 @@
   },
   "entities": {
     "Productos": {
-      "source": "Products",
+      "source": "ProductosTabla",
       "permissions": [
         {
           "actions": ["*"],
